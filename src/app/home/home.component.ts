@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
     //   result => this.reciters_list = result.reciters_verse
     // );
 
-    this.http.get<any>("http://mp3quran.net/api/_arabic.php").subscribe(
+    this.http.get<any>("https://mp3quran.net/api/_arabic.php").subscribe(
       result => this.all_reciters_list = result.reciters
     )
     
