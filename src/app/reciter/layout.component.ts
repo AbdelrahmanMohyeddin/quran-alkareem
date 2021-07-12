@@ -24,8 +24,7 @@ export class LayoutComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.route.params.subscribe(params => this.server = params.id);
-    this.route.params.subscribe(params => this.surahStr = params.page)
+    this.route.params.subscribe(params => {this.server = params.id; this.surahStr = params.page});
     this.surah = this.surahStr.split(",");
 
     
@@ -38,7 +37,7 @@ export class LayoutComponent implements OnInit {
           let y:string = (x == 1?"00"+i:(x == 2?"0"+i:i)).toString()+".mp3"
           this.surahMap.set( y , this.listOfSuras[i-1]);
         }
-    }
+      }
     );
 
     for(let i = 0 ; i < this.surah.length;i++){
@@ -50,9 +49,9 @@ export class LayoutComponent implements OnInit {
 
   display(selected_surah:string){
     this.src = this.server + "/" + selected_surah;
-    
-    var audio = document.getElementsByTagName('audio');
-    audio[0].play();
+    //console.log(this.src);
+    // var audio = document.getElementsByTagName('audio');
+    // audio[0].play();
   }
 
   

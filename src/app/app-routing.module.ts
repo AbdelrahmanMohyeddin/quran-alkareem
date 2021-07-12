@@ -1,3 +1,4 @@
+import { AboutMeComponent } from './about-me/about-me.component';
 import { SurahComponent } from './surah/surah.component';
 import { HomeComponent } from './home/home.component';
 import { IndexesComponent } from './indexes/indexes.component';
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path:'index',component:IndexesComponent},
   {path:'home',component:HomeComponent},
   {path:'reciter/:id/:page',loadChildren:reciterModule},
-  {path:'surah/:id',component:SurahComponent}
+  {path:'surah/:id',component:SurahComponent},
+  {path:'aboutme',component:AboutMeComponent}
   
 ];
 

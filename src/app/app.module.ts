@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { SurahComponent } from './surah/surah.component';
 import { LayoutComponent } from './reciter/layout.component';
 import { AudioPlayerComponent } from './reciter/audio-player/audio-player.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AudioPlayerComponent } from './reciter/audio-player/audio-player.compon
     IndexesComponent,
     HomeComponent,
     SurahComponent,
-    LayoutComponent
+    LayoutComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,
