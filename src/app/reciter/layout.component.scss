@@ -1,0 +1,27 @@
+
+
+
+.surah-content{
+    margin: 5px;
+    box-shadow: 1px 1px 10px #999;
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.display{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    background-color: green;
+    margin: 0px;
+    color: #fff;
+    position: absolute;
+    bottom: 12px;
+    left: 20px;
+    padding: 7px;
+    cursor: pointer;
+    text-decoration: none;
+}

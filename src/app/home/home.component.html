@@ -1,0 +1,18 @@
+<div class="m-auto text-center page-title">
+    <h3>المكتبه الصوتيه</h3>
+</div>
+
+<div class="list-of-reciter text-center row">
+    <a class="col-sm-12 col-md-4 col-lg-3 reciter" *ngFor="let reciter of all_reciters_list" [routerLink]="['/reciter/',reciter.Server,reciter.suras]" >
+        <div class="reciter-content">
+            <span class="reciter-name">{{reciter.name}}</span>
+            <br/>
+            {{reciter.count}} سوره
+            <br/>
+            {{reciter.rewaya}}
+            <br/>
+            <div class="display"><i class="fas fa-play"></i></div>
+        </div>
+        
+    </a>
+</div>

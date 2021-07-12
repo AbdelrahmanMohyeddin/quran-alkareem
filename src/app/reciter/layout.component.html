@@ -1,0 +1,11 @@
+<router-outlet></router-outlet>
+
+<div class="row">
+    <div *ngFor="let item of surah" class="surah col-sm-12 col-md-4 col-lg-3">
+        <div class="surah-content">
+            {{surahMap.get(item)}}
+            <a class="display" [routerLink]="['audio',server,item]" ><i class="fas fa-play"></i></a>
+        </div>
+    </div>
+</div>
+

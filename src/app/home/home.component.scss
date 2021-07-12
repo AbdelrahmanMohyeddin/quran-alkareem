@@ -1,0 +1,58 @@
+
+h4{
+    color: rgb(21, 168, 65);
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.page-title{
+    color:green;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow:  0px 1px 2px 2px #eee;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    h3{
+        margin: 30px;
+    }
+}
+.reciter{
+    padding: 10px;
+    text-decoration: none;
+    
+    
+    .reciter-content{
+        color: rgb(3, 170, 59);
+        font-weight: 700;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow:  0px 1px 2px 2px #eee;
+        cursor: pointer;
+        .reciter-name{
+            font-size: large;
+        }
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .reciter-content:hover{
+        transition: 0.5s all;
+        background-color: rgb(11, 165, 57);
+        color: #fff;
+    }
+}
+
+.display{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    background-color: green;
+    margin: 0px;
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+    border-radius: 10px;
+}

@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #36cf5a;" ><!-- style="background-color: #36cf5a;" -->
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/']">
+        <img src="./../assets/images/logo-hed.png" width="50" height="50" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" [routerLink]="['/']" routerLinkActive="router-link-active" >الصفحه الرئيسيه</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/index']" routerLinkActive="router-link-active" >الفهرس</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/home']" routerLinkActive="router-link-active" >المكتبه الصوتيه</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">نبذه عنا</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>

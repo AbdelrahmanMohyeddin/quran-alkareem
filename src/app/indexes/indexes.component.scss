@@ -1,0 +1,32 @@
+.upload{
+    font-weight:bold;
+    color:#28a745;
+    margin-left: 15px;
+    line-height: 36px;
+}
+
+.page-title{
+    color:green;
+    h3{
+        margin: 30px;
+    }
+}
+.surah-title{
+    border: 0px solid #555;
+    padding: 5px;
+    .surah-title-content{
+        padding: 3px;
+        padding-right: 15px;
+        border: 1px solid #28a745;
+        color: green;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .surah-title-content:hover{
+        background-color:#28a745;
+        color:#fff;
+    }
+}
+a{
+    text-decoration: none;
+}
