@@ -1,3 +1,4 @@
+import { MainServiceService } from './services/main-service.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -25,7 +26,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [MainServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

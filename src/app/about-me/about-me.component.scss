@@ -30,9 +30,16 @@
             .social{
                 display: flex;
                 margin-top: 20px;
-                div{
+                a{
+                    text-decoration: none;
                     margin: 4px;
                     font-size: 30px;
+                    @media screen and (min-width: 768px) {
+                        color: #eee;
+                    }
+                    @media screen and (max-width: 767px) {
+                        color: #333;
+                    }
                 }
             }
         }
