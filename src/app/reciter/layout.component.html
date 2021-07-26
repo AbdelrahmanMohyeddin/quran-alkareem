@@ -1,8 +1,8 @@
 <div class="player">
     <router-outlet></router-outlet>
 </div>
-<div class="">
-    <div *ngFor="let item of surah" class="surah">
+<div class="row">
+    <div *ngFor="let item of surah" class="surah col-sm-12 col-md-6 col-lg-3">
         <div class="surah-content">
             {{surahMap.get(item)}}
             <a class="display" [routerLink]="['audio',server,item]" ><i class="fas fa-play"></i></a>
